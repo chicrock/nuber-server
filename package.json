@@ -1,0 +1,17 @@
+{
+  "name": "nuber-server",
+  "version": "1.0.0",
+  "description": "Server for the Uber Clone Course on Nomad Academy. GraphQL, Typescript, NodeJS",
+  "main": "index.js",
+  "repository": "https://github.com/chicrock/nuber-server.git",
+  "author": "ChicRock <jungsungrak@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3"
+  }
+}
