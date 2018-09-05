@@ -14,8 +14,10 @@ yarn add tslint-config-prettier --dev
 ### graphql
 
 ```bash
-yarn add graphql-yoga
-yarn add graphql-tools merge-graphql-schemas
+yarn add graphql-yoga graphql-tools merge-graphql-schemas
+
+# install for connect to graphql and typescript
+yarn add graphql-to-typescript gql-merge babel-runtime --dev
 ```
 
 ### Middleware
