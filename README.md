@@ -11,10 +11,11 @@ yarn add typescript ts-node nodemon --dev
 yarn add tslint-config-prettier --dev
 ```
 
-### graphql-yoga
+### graphql
 
 ```bash
 yarn add graphql-yoga
+yarn add graphql-tools merge-graphql-schemas
 ```
 
 ### Middleware
