@@ -30,7 +30,7 @@ yarn add helmet morgan cors
 ### @types
 
 ```bash
-yarn add @types/node @types/cors @types/helmet @types/morgan --dev
+yarn add @types/node @types/cors @types/helmet @types/morgan @types/bcrypt --dev
 ```
 
 ### typeorm
