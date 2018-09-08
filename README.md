@@ -31,3 +31,13 @@ yarn add helmet morgan cors
 ```bash
 yarn add @types/node @types/cors @types/helmet @types/morgan --dev
 ```
+
+### typeorm
+
+```bash
+yarn add typeorm pg
+```
+
+## Setup
+
+### Create database
