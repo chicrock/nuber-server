@@ -9,6 +9,7 @@ Server for the Uber Clone Course on Nomad Academy. GraphQL, Typescript, NodeJS
 ```bash
 yarn add typescript ts-node nodemon --dev
 yarn add tslint-config-prettier --dev
+yarn add dotenv
 ```
 
 ### graphql
