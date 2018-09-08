@@ -1,0 +1,16 @@
+type Verification {
+  id: Int!
+  target: String!
+  payload: String!
+  key: String!
+  used: Boolean!
+  createdAt: String!
+  updatedAt: String!
+}
+
+v = Verification
+v.target = phone
+v.payload = +44959383273891
+v.key = 3412
+
+heLlow verify with the number 3412
