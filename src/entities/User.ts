@@ -72,7 +72,7 @@ class User extends BaseEntity {
   chat: Chat;
 
   @OneToMany(type => Message, message => message.user)
-  messages: [Message];
+  messages: Message[];
 
   @CreateDateColumn()
   createdAt: string;
