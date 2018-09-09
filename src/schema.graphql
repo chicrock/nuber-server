@@ -1,3 +1,47 @@
+type Chat {
+  id: Int!
+  messages: [Message]
+  participants: [User]
+  createdAt: String!
+  updatedAt: String
+}
+
+type Message {
+  int: Int!
+  text: String!
+  chat: Chat!
+  user: User!
+  createdAt: String!
+  updatedAt: String
+}
+
+type Place {
+  id: Int!
+  name: String!
+  lat: Float!
+  lng: Float!
+  address: String!
+  isFav: Boolean!
+  createdAt: String!
+  updatedAt: String
+}
+
+type Ride {
+  id: Int!
+  status: String!
+  pickupAddress: String!
+  pickupLat: Float!
+  pickupLng: Float!
+  dropOffAddress: String!
+  dropOffLat: Float!
+  dropOffLng: Float!
+  price: Float!
+  distance: String!
+  duration: String!
+  createdAt: String!
+  updatedAt: String
+}
+
 type User {
   id: Int!
   email: String
@@ -31,5 +75,5 @@ type Verification {
   key: String!
   used: Boolean!
   createdAt: String!
-  updatedAt: String!
+  updatedAt: String
 }
