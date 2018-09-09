@@ -75,7 +75,12 @@ yarn add typeorm pg
 - [] Subscribe to Chat Room Messages
 - [] Send a Chat Message
 
-## Code Challenge
+### Code Challenge
 
 - [] Get Ride History
 - [] See Ride Detail
+
+## Memo
+
+- [Get fbId](https://findmyfbid.com/)
+- [Send SMS](https://www.twilio.com/)
