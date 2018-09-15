@@ -39,6 +39,13 @@ yarn add @types/node @types/cors @types/helmet @types/morgan @types/bcrypt --dev
 yarn add typeorm pg
 ```
 
+### twilio
+
+```bash
+yarn add twilio
+yarn add @types/twilio --dev
+```
+
 ## Setup
 
 ### Create database
@@ -84,3 +91,24 @@ yarn add typeorm pg
 
 - [Get fbId](https://findmyfbid.com/)
 - [Send SMS](https://www.twilio.com/)
+
+## SMS Setting
+
+### Setup Twilio(Programmable SMS)
+
+1. Make project
+2. Add credit card info
+3. Buy Amarican number
+4. Set Messaging Geographic Permissions
+
+### Using Token
+
+1. Go Dashboard
+2. Copy Auth Token
+3. Set environment variables in .env file
+
+```bash
+TWILIO_SID=
+TWILIO_TOKEN=
+TWILIO_PHONE=
+```
