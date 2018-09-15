@@ -61,6 +61,8 @@ yarn add @types/jsonwebtoken --dev
 
 - [Password Generator](https://passwordsgenerator.net/)
 
+### Using Curry for resolverMiddleware
+
 ## Resolvers
 
 ### Public Resolvers
