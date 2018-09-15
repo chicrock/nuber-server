@@ -76,14 +76,14 @@ yarn add @types/jsonwebtoken --dev
 ### Authentication
 
 - [x] Generate JWT
-- [] Verify JWT
+- [x] Verify JWT
 
 ---
 
 ### Private Resolvers
 
+- [x] Get My Profile
 - [] Verify Email
-- [] Get My Profile
 - [] Update My Profile
 - [] Toggle Driving Mode
 - [] Report Location / Orientation
