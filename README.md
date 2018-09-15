@@ -50,6 +50,7 @@ yarn add @types/twilio --dev
 
 ```bash
 yarn add jsonwebtoken
+yarn add @types/jsonwebtoken --dev
 ```
 
 ## Setup
