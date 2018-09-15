@@ -46,9 +46,19 @@ yarn add twilio
 yarn add @types/twilio --dev
 ```
 
+### jwt
+
+```bash
+yarn add jsonwebtoken
+```
+
 ## Setup
 
 ### Create database
+
+### Create strong password for JWT
+
+- [Password Generator](https://passwordsgenerator.net/)
 
 ## Resolvers
 
@@ -64,7 +74,7 @@ yarn add @types/twilio --dev
 
 ### Authentication
 
-- [] Generate JWT
+- [x] Generate JWT
 - [] Verify JWT
 
 ---
