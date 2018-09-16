@@ -96,9 +96,10 @@ yarn add @types/jsonwebtoken --dev
 - [x] Update My Profile
 - [x] Toggle Driving Mode
 - [x] Report Location / Orientation
-- [ ] Add Place
-- [ ] Edit Place
+- [x] Add Place
+- [x] Edit Place
 - [ ] Delete Place
+- [ ] Get My Places
 - [ ] See Nearby Drivers
 - [ ] Subscribe to Nearby Drivers
 - [ ] Request a Ride
@@ -119,6 +120,15 @@ yarn add @types/jsonwebtoken --dev
 - [Get fbId](https://findmyfbid.com/)
 - [Send SMS](https://www.twilio.com/)
 - [Send Email](https://www.mailgun.com)
+
+### Typeorm makes relations fields automatically when only define fields name with Id
+
+- Need relations with User, just add Columns in Entity with userId
+
+```js
+@Column({ nullable: true })
+  userId: number;
+```
 
 ## SMS Setting
 
