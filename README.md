@@ -92,7 +92,7 @@ yarn add @types/jsonwebtoken --dev
 
 - [x] Get My Profile
 - [x] Request Email Verification
-- [ ] Complete Email Verification
+- [x] Complete Email Verification
 - [ ] Update My Profile
 - [ ] Toggle Driving Mode
 - [ ] Report Location / Orientation
