@@ -91,7 +91,7 @@ yarn add @types/jsonwebtoken --dev
 ### Private Resolvers
 
 - [x] Get My Profile
-- [ ] Request Email Verification
+- [x] Request Email Verification
 - [ ] Complete Email Verification
 - [ ] Update My Profile
 - [ ] Toggle Driving Mode
