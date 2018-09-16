@@ -46,6 +46,12 @@ yarn add twilio
 yarn add @types/twilio --dev
 ```
 
+### mailgun
+
+```bash
+yarn add mailgun-js && yarn add@types/mailgun-js --dev
+```
+
 ### jwt
 
 ```bash
@@ -85,32 +91,34 @@ yarn add @types/jsonwebtoken --dev
 ### Private Resolvers
 
 - [x] Get My Profile
-- [] Verify Email
-- [] Update My Profile
-- [] Toggle Driving Mode
-- [] Report Location / Orientation
-- [] Add Place
-- [] Edit Place
-- [] Delete Place
-- [] See Nearby Drivers
-- [] Subscribe to Nearby Drivers
-- [] Request a Ride
-- [] Get Nearby Ride Requests
-- [] Subscribe to Nearby Ride Requests
-- [] Subscribe to Ride Status
-- [] Get Chat Room Message
-- [] Subscribe to Chat Room Messages
-- [] Send a Chat Message
+- [ ] Request Email Verification
+- [ ] Complete Email Verification
+- [ ] Update My Profile
+- [ ] Toggle Driving Mode
+- [ ] Report Location / Orientation
+- [ ] Add Place
+- [ ] Edit Place
+- [ ] Delete Place
+- [ ] See Nearby Drivers
+- [ ] Subscribe to Nearby Drivers
+- [ ] Request a Ride
+- [ ] Get Nearby Ride Requests
+- [ ] Subscribe to Nearby Ride Requests
+- [ ] Subscribe to Ride Status
+- [ ] Get Chat Room Message
+- [ ] Subscribe to Chat Room Messages
+- [ ] Send a Chat Message
 
 ### Code Challenge
 
-- [] Get Ride History
-- [] See Ride Detail
+- [ ] Get Ride History
+- [ ] See Ride Detail
 
 ## Memo
 
 - [Get fbId](https://findmyfbid.com/)
 - [Send SMS](https://www.twilio.com/)
+- [Send Email](https://www.mailgun.com)
 
 ## SMS Setting
 

@@ -13,4 +13,4 @@ const sendSMS = (to: string, body: string): Promise<any> => {
 const sendVerificationSMS = (to: string, key: string): Promise<any> =>
   sendSMS(to, `Your Verification key is: ${key}`);
 
-export { sendSMS, sendVerificationSMS };
+export { sendVerificationSMS };
