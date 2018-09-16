@@ -95,7 +95,7 @@ yarn add @types/jsonwebtoken --dev
 - [x] Complete Email Verification
 - [x] Update My Profile
 - [x] Toggle Driving Mode
-- [ ] Report Location / Orientation
+- [x] Report Location / Orientation
 - [ ] Add Place
 - [ ] Edit Place
 - [ ] Delete Place
