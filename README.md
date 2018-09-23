@@ -100,10 +100,10 @@ yarn add @types/jsonwebtoken --dev
 - [x] Edit Place
 - [x] Delete Place
 - [x] Get My Places
-- [ ] See Nearby Drivers
-- [ ] Subscribe to Nearby Drivers
-- [ ] Request a Ride
+- [x] See Nearby Drivers
+- [x] Subscribe to Nearby Drivers
 - [ ] Get Nearby Ride Requests
+- [ ] Request a Ride
 - [ ] Subscribe to Nearby Ride Requests
 - [ ] Subscribe to Ride Status
 - [ ] Get Chat Room Message
@@ -129,6 +129,11 @@ yarn add @types/jsonwebtoken --dev
 @Column({ nullable: true })
   userId: number;
 ```
+
+### Find Operator on typeorm
+
+- find operators like between work only with getRepository function
+- [Typeorm find options](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md)
 
 ## SMS Setting
 
