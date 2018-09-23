@@ -7,7 +7,7 @@ type Chat {
 }
 
 type Message {
-  int: Int!
+  id: Int!
   text: String!
   chat: Chat!
   user: User!
@@ -44,6 +44,18 @@ type DeletePlaceResponse {
 type EditPlaceResponse {
   ok: Boolean!
   error: String
+}
+
+type GetMyPlacesResponse {
+  ok: Boolean!
+  error: String
+  places: [Place]
+}
+
+type Query {
+  GetMyPlaces: GetMyPlacesResponse!
+  GetMyProfile: GetMyProfileResponse!
+  user: User
 }
 
 type Place {
@@ -112,11 +124,6 @@ type GetMyProfileResponse {
   user: User
 }
 
-type Query {
-  GetMyProfile: GetMyProfileResponse!
-  user: User
-}
-
 type ReportMovementResponse {
   ok: Boolean!
   error: String
@@ -152,7 +159,7 @@ type User {
   ridesAsDriver: [Ride]
   places: [Place]
   createdAt: String!
-  updateAt: String
+  updatedAt: String
 }
 
 type StartPhoneVerificationResponse {

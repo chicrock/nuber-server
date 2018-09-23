@@ -99,7 +99,7 @@ yarn add @types/jsonwebtoken --dev
 - [x] Add Place
 - [x] Edit Place
 - [x] Delete Place
-- [ ] Get My Places
+- [x] Get My Places
 - [ ] See Nearby Drivers
 - [ ] Subscribe to Nearby Drivers
 - [ ] Request a Ride

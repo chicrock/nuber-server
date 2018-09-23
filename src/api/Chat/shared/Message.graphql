@@ -1,5 +1,5 @@
 type Message {
-  int: Int!
+  id: Int!
   text: String!
   chat: Chat!
   user: User!
