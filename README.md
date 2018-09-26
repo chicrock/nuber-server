@@ -102,8 +102,8 @@ yarn add @types/jsonwebtoken --dev
 - [x] Get My Places
 - [x] See Nearby Drivers
 - [x] Subscribe to Nearby Drivers
+- [x] Request a Ride
 - [ ] Get Nearby Ride Requests
-- [ ] Request a Ride
 - [ ] Subscribe to Nearby Ride Requests
 - [ ] Subscribe to Ride Status
 - [ ] Get Chat Room Message
