@@ -21,7 +21,7 @@ const resolvers: Resolvers = {
           return {
             ok: true,
             error: null,
-            ride: null,
+            ride,
           };
         } catch (error) {
           return {
