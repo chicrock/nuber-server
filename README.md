@@ -132,7 +132,7 @@ yarn add @types/jsonwebtoken --dev
 
 ### Find Operator on typeorm
 
-- find operators like between work only with getRepository function
+- Find operators like between work only with getRepository function(These functions didn't work on active record)
 - [Typeorm find options](https://github.com/typeorm/typeorm/blob/master/docs/find-options.md)
 
 ## SMS Setting
