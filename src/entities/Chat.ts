@@ -6,9 +6,11 @@ import {
   UpdateDateColumn,
   OneToMany,
   Column,
+  OneToOne,
 } from "typeorm";
 import Message from "./Message";
 import User from "./User";
+import Ride from "./Ride";
 
 @Entity()
 class Chat extends BaseEntity {
@@ -29,6 +31,12 @@ class Chat extends BaseEntity {
 
   @OneToMany(type => User, user => user.chatsAsDriver)
   driver: User;
+
+  @Column({ nullable: true })
+  rideId: number;
+
+  @OneToOne(type => Ride, ride => ride.chat)
+  ride: Ride;
 
   @CreateDateColumn()
   createdAt: string;
