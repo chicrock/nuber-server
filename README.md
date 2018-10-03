@@ -108,6 +108,7 @@ yarn add @types/jsonwebtoken --dev
 - [x] Update Ride Status
 - [x] Get Ride
 - [x] Subscribe to Ride Status
+- [x] Create a Chat room
 - [ ] Get Chat Room Message
 - [ ] Subscribe to Chat Room Messages
 - [ ] Send a Chat Message
