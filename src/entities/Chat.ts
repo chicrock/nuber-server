@@ -7,6 +7,7 @@ import {
   OneToMany,
   Column,
   OneToOne,
+  ManyToOne,
 } from "typeorm";
 import Message from "./Message";
 import User from "./User";
@@ -26,10 +27,10 @@ class Chat extends BaseEntity {
   @Column({ nullable: true })
   driverId: number;
 
-  @OneToMany(type => User, user => user.chatsAsPassenger)
+  @ManyToOne(type => User, user => user.chatsAsPassenger)
   passenger: User;
 
-  @OneToMany(type => User, user => user.chatsAsDriver)
+  @ManyToOne(type => User, user => user.chatsAsDriver)
   driver: User;
 
   @Column({ nullable: true })

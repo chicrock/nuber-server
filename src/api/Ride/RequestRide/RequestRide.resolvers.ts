@@ -17,6 +17,9 @@ const resolvers: Resolvers = {
       ): Promise<RequestRideResponse> => {
         const user: User = req.user;
 
+        user.isRiding = false;
+        user.save();
+
         if (!user.isRiding && !user.isDriving) {
           try {
             const ride = await Ride.create({ ...args, passenger: user }).save();

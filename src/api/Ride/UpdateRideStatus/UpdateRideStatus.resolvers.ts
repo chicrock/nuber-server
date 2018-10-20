@@ -20,6 +20,7 @@ const resolvers: Resolvers = {
         if (user.isDriving) {
           try {
             let ride: Ride | undefined;
+
             if (args.status === "ACCEPTED") {
               ride = await Ride.findOne(
                 {
@@ -29,7 +30,6 @@ const resolvers: Resolvers = {
                 { relations: ["passenger"] }
               );
               if (ride) {
-                ride.driver = user;
                 user.isTaken = true;
                 user.save();
 
@@ -38,6 +38,7 @@ const resolvers: Resolvers = {
                   passenger: ride.passenger,
                 }).save();
 
+                ride.driver = user;
                 ride.chat = chat;
                 ride.save();
               }
