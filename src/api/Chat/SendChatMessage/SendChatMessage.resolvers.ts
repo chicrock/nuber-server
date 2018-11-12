@@ -13,7 +13,7 @@ import privateResolver from "../../../utils/privateResolver";
       async (
         _,
         args: SendChatMessageMutationArgs,
-        { req }
+        { req, pubSub }
       ): Promise<SendChatMessageResponse> => {
         const user: User = req.user;
         try {
@@ -25,6 +25,9 @@ import privateResolver from "../../../utils/privateResolver";
                 chat,
                 user
               }).save();
+
+              pubSub.publish("newChatMessage", {MessageSubscription: message});
+
               return {
                 ok: true,
                 error: null,
