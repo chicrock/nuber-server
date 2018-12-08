@@ -14,9 +14,17 @@ type Query {
   user: User
 }
 
+type Subscription {
+  MessageSubscription: Message
+  NearbyRideSubscription: Ride
+  RideStatusSubscription: Ride
+  DriversSubscription: User
+}
+
 type SendChatMessageResponse {
   ok: Boolean!
   error: String
+  message: Message
 }
 
 type Mutation {
@@ -104,12 +112,6 @@ type GetRideResponse {
   ok: Boolean!
   error: String
   ride: Ride
-}
-
-type Subscription {
-  NearbyRideSubscription: Ride
-  RideStatusSubscription: Ride
-  DriversSubscription: User
 }
 
 type RequestRideResponse {
