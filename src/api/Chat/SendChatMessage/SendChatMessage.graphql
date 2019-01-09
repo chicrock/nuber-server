@@ -3,6 +3,6 @@ type SendChatMessageResponse {
   error: String
   message: Message
 }
- type Mutation {
+type Mutation {
   SendChatMessage(text: String!, chatId: Int!): SendChatMessageResponse!
 }

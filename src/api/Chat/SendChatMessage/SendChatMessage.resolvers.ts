@@ -3,11 +3,11 @@ import Message from "../../../entities/Message";
 import User from "../../../entities/User";
 import {
   SendChatMessageMutationArgs,
-  SendChatMessageResponse
+  SendChatMessageResponse,
 } from "../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
 import privateResolver from "../../../utils/privateResolver";
- const resolvers: Resolvers = {
+const resolvers: Resolvers = {
   Mutation: {
     SendChatMessage: privateResolver(
       async (
@@ -23,39 +23,41 @@ import privateResolver from "../../../utils/privateResolver";
               const message = await Message.create({
                 text: args.text,
                 chat,
-                user
+                user,
               }).save();
 
-              pubSub.publish("newChatMessage", {MessageSubscription: message});
+              pubSub.publish("newChatMessage", {
+                MessageSubscription: message,
+              });
 
               return {
                 ok: true,
                 error: null,
-                message
+                message,
               };
             } else {
               return {
                 ok: false,
                 error: "Unauthorized",
-                message: null
+                message: null,
               };
             }
           } else {
             return {
               ok: false,
               error: "Chat not found",
-              message: null
+              message: null,
             };
           }
         } catch (error) {
           return {
             ok: false,
             error: error.message,
-            message: null
+            message: null,
           };
         }
       }
-    )
-  }
+    ),
+  },
 };
- export default resolvers;
+export default resolvers;
