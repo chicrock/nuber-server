@@ -2,7 +2,7 @@ import privateResolver from "../../../utils/privateResolver";
 import { GetNearbyDriversResponse } from "../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
 import User from "../../../entities/User";
-import { Between, getRepository } from "typeorm";
+import { Between, getRepository, Not, Equal } from "typeorm";
 
 const resolvers: Resolvers = {
   Query: {
@@ -15,6 +15,7 @@ const resolvers: Resolvers = {
             isDriving: true,
             lastLat: Between(lastLat - 0.05, lastLat + 0.05),
             lastLng: Between(lastLng - 0.05, lastLng + 0.05),
+            id: Not(Equal(user.id)),
           });
 
           return {
