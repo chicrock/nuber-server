@@ -20,7 +20,6 @@ const resolvers: Resolvers = {
           );
 
           if (chat) {
-            console.log(chat);
             if (chat.driverId === user.id || chat.passengerId === user.id) {
               return {
                 ok: true,

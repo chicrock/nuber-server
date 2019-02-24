@@ -17,9 +17,6 @@ const resolvers = {
           } = payload;
           const { lastLat: userLastLat, lastLng: userLastLng } = user;
 
-          console.log(payload);
-          console.log(user);
-
           return (
             driverLastLat >= userLastLat - 0.05 &&
             driverLastLat <= userLastLat + 0.05 &&
