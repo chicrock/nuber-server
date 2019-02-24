@@ -16,6 +16,7 @@ const resolvers: Resolvers = {
         { req, pubSub }
       ): Promise<ReportMovementResponse> => {
         const user: User = req.user;
+        console.log(args);
         const notNull = cleanNullArgs(args);
         try {
           await User.update({ id: user.id }, { ...notNull });
