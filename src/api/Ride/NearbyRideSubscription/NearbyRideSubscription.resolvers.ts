@@ -15,9 +15,9 @@ const resolvers = {
 
           return (
             pickupLat >= userLastLat - 0.05 &&
-            pickupLat >= userLastLat + 0.05 &&
+            pickupLat <= userLastLat + 0.05 &&
             pickupLng >= userLastLng - 0.05 &&
-            pickupLng >= userLastLng + 0.05
+            pickupLng <= userLastLng + 0.05
           );
         }
       ),
