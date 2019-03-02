@@ -4,7 +4,7 @@ type UpdateRideStatusResponse {
   rideId: Int
 }
 
-enum StatusOpeions {
+enum StatusOptions {
   ACCEPTED
   FINISHED
   CANCELED
@@ -15,6 +15,6 @@ enum StatusOpeions {
 type Mutation {
   UpdateRideStatus(
     rideId: Int!
-    status: StatusOpeions!
+    status: StatusOptions!
   ): UpdateRideStatusResponse!
 }
