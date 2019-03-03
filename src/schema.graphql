@@ -1,10 +1,3 @@
-type Subscription {
-  ChatMessageSubscription: Message
-  NearbyRideSubscription: Ride
-  RideStatusSubscription: Ride
-  DriversSubscription: User
-}
-
 type GetChatResponse {
   ok: Boolean!
   error: String
@@ -19,6 +12,13 @@ type Query {
   GetMyProfile: GetMyProfileResponse!
   GetNearbyDrivers: GetNearbyDriversResponse!
   user: User
+}
+
+type Subscription {
+  MessageSubscription: Message
+  NearbyRideSubscription: Ride
+  RideStatusSubscription: Ride
+  DriversSubscription: User
 }
 
 type SendChatMessageResponse {
