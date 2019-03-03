@@ -53,6 +53,17 @@ const resolvers: Resolvers = {
             }
 
             if (ride) {
+              if (args.status === "FINISHED") {
+                const passenger = await User.findOne({
+                  id: ride.passengerId,
+                });
+
+                if (passenger) {
+                  passenger.isRiding = false;
+                  passenger.save();
+                }
+              }
+
               ride.status = args.status;
               ride.save();
 
