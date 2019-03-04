@@ -10,6 +10,7 @@ import {
   BeforeInsert,
   BeforeUpdate,
   OneToMany,
+  Index,
 } from "typeorm";
 import Chat from "./Chat";
 import Message from "./Message";
@@ -25,6 +26,7 @@ class User extends BaseEntity {
 
   @Column({ type: "text", nullable: true })
   @IsEmail()
+  @Index()
   email: string | null;
 
   @Column({ type: "boolean", default: false })
