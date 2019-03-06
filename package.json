@@ -21,17 +21,7 @@
     "morgan": "^1.9.0",
     "pg": "^7.8.1",
     "twilio": "^3.29.0",
-    "typeorm": "^0.2.14"
-  },
-  "devDependencies": {
-    "@types/bcrypt": "^3.0.0",
-    "@types/cors": "^2.8.4",
-    "@types/helmet": "^0.0.42",
-    "@types/jsonwebtoken": "^8.3.0",
-    "@types/mailgun-js": "^0.16.0",
-    "@types/morgan": "^1.7.35",
-    "@types/node": "^11.10.4",
-    "@types/twilio": "^0.0.10",
+    "typeorm": "^0.2.14",
     "babel-runtime": "^6.26.0",
     "copy": "^0.3.2",
     "gql-merge": "^0.0.6",
@@ -41,6 +31,16 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.3.3333"
   },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.4",
+    "@types/helmet": "^0.0.42",
+    "@types/jsonwebtoken": "^8.3.0",
+    "@types/mailgun-js": "^0.16.0",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^11.10.4",
+    "@types/twilio": "^0.0.10"
+  },
   "scripts": {
     "predev": "yarn run types",
     "dev": "cd src && nodemon --exec ts-node index.ts -e ts,graphql",
@@ -48,6 +48,9 @@
     "types": "graphql-to-typescript ./src/schema.graphql ./src/types/graph.d.ts",
     "prebuild": "rm -rf dist",
     "build": "tsc",
-    "postbuild": "copy ./src/api/**/*.graphql dist/api"
+    "postbuild": "copy ./src/api/**/*.graphql ./dist/api",
+    "start": "node ./dist",
+    "now-build": "yarn build",
+    "now-start": "yarn start"
   }
 }
