@@ -59,6 +59,12 @@ yarn add jsonwebtoken
 yarn add @types/jsonwebtoken --dev
 ```
 
+### for deploy
+
+```bash
+yarn global add now
+```
+
 ## Setup
 
 ### Create database
@@ -110,8 +116,8 @@ yarn add @types/jsonwebtoken --dev
 - [x] Subscribe to Ride Status
 - [x] Create a Chat room
 - [x] Get Chat Room Message
-- [X] Send a Chat Message
-- [X] Subscribe to Chat Room Messages
+- [x] Send a Chat Message
+- [x] Subscribe to Chat Room Messages
 
 ### Code Challenge
 
