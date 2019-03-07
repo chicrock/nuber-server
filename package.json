@@ -49,8 +49,6 @@
     "prebuild": "rm -rf dist",
     "build": "tsc",
     "postbuild": "copy ./src/api/**/*.graphql ./dist/api",
-    "start": "node ./dist",
-    "now-build": "yarn build",
-    "now-start": "yarn start"
+    "start": "yarn build && node ./dist"
   }
 }
